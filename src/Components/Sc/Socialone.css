@@ -1,0 +1,132 @@
+.socialone-container {
+    width: 100%;
+    padding: 40px 120px; 
+    box-sizing: border-box;
+}
+
+.social-section {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.social-image,
+.social-text {
+    flex: 1 1 30%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.social-image {
+    margin-left: 80px; 
+}
+
+.social-text {
+    margin-right: 80px; 
+    text-align: left;
+}
+
+.social-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.social-text h1 {
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+}
+
+.social-text p {
+    font-size: 1.1rem; 
+    line-height: 1.6;
+}
+
+.social-reverse {
+    flex-direction: row-reverse;
+}
+
+.social-reverse .social-image {
+    margin-left: 0;
+    margin-right: 80px;
+}
+
+.social-reverse .social-text {
+    margin-right: 0;
+    margin-left: 80px; 
+}
+@media (max-width: 1024px) {
+    .socialone-container {
+        padding: 20px 60px;
+    }
+
+    .social-text h1 {
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    .social-text p {
+        font-size: 1rem;
+        text-align: left;
+    }
+}
+
+@media (max-width: 768px) {
+    .social-section {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-image,
+    .social-text {
+        flex: 1 1 100%;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .social-image {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .social-text {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .social-reverse .social-image {
+        margin-right: 0;
+    }
+
+    .social-reverse .social-text {
+        margin-left: 0;
+    }
+
+    .social-text h1 {
+        font-size: 1.8rem;
+        text-align: left;
+    }
+
+    .social-text p {
+        font-size: 0.95rem;
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .socialone-container {
+        padding: 10px 20px;
+    }
+
+    .social-text h1 {
+        font-size: 1.5rem;
+        text-align: left;
+    }
+
+    .social-text p {
+        font-size: 0.85rem;
+        text-align: left;
+    }
+}

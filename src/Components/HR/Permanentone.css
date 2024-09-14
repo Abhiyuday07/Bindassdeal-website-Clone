@@ -1,0 +1,122 @@
+/* Base styles for desktop view */
+.permanentone-container {
+    width: 100%;
+    padding: 40px 80px;
+    box-sizing: border-box;
+}
+
+.section {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.section-image,
+.section-text {
+    flex: 1 1 40%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.section-image {
+    margin-left: 60px;
+}
+
+.section-text {
+    margin-right: 60px;
+    text-align: left;
+}
+
+.section-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.section-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.section-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.section-reverse {
+    flex-direction: row-reverse;
+}
+
+.section-reverse .section-image {
+    margin-left: 0;
+    margin-right: 60px;
+}
+
+.section-reverse .section-text {
+    margin-right: 0;
+    margin-left: 60px;
+}
+
+/* Responsive Design */
+
+/* For medium-sized devices (tablets and smaller laptops) */
+@media (max-width: 1024px) {
+    .permanentone-container {
+        padding: 30px 40px;
+    }
+
+    .section-text h1 {
+        font-size: 2rem;
+    }
+
+    .section-text p {
+        font-size: 1.1rem;
+    }
+}
+
+/* For small devices (mobile) */
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-image,
+    .section-text {
+        flex: 1 1 100%;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .section-image {
+        margin-left: 0;
+    }
+
+    .section-text {
+        margin-right: 0;
+    }
+
+    .section-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .section-text p {
+        font-size: 1rem;
+    }
+}
+
+/* For extra small devices (phones) */
+@media (max-width: 480px) {
+    .permanentone-container {
+        padding: 20px 20px;
+    }
+
+    .section-text h1 {
+        font-size: 1.6rem;
+    }
+
+    .section-text p {
+        font-size: 0.95rem;
+    }
+}

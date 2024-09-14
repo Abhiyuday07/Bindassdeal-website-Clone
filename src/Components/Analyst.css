@@ -1,0 +1,71 @@
+/* .contentList {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: repeat(auto, auto);
+    justify-content: center;
+    align-items: baseline;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    columns: 3;
+    column-gap: 30px;
+    row-gap: 30px;
+  } */
+
+  .analyst-container {
+    padding: 20px;
+    background-color: white;
+}
+
+.contentList {
+    columns: 3;
+    column-gap: 30px;
+}
+
+.card {
+    display: inline-block;
+    margin-bottom: 25px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+
+@media (max-width: 1024px) {
+    .contentList {
+        columns: 2; 
+        column-gap: 20px;
+    }
+
+    .card {
+        width: 100%; 
+    }
+}
+
+@media (max-width: 768px) {
+    .contentList {
+        columns: 1; 
+        column-gap: 15px;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .contentList {
+        columns: 1; 
+        column-gap: 10px;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

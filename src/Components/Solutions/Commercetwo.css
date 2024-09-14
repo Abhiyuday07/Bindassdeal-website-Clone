@@ -1,0 +1,37 @@
+.commercetwo-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1592503254549-d83d24a4dfab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZWNvbW1lcmNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.commercetwo-content {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* .commercetwo-content h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+} */
+
+.commercetwo-content p {
+    font-size: 1.7rem;
+    line-height: 1.5;
+    width: 55%;
+}

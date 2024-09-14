@@ -1,0 +1,86 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; 
+}
+
+.hiretwo-container {
+    position: relative;
+    height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1530099486328-e021101a494a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1547&q=80'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box; 
+}
+
+.content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 800px;
+}
+
+@media (max-width: 1024px) { 
+    .content h1 {
+        font-size: 28px; 
+    }
+
+    .content p {
+        font-size: 15px; 
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 768px) { 
+    .hiretwo-container {
+        background-attachment: scroll; 
+    }
+
+    .content {
+        padding: 15px;
+    }
+
+    .content h1 {
+        font-size: 24px; 
+    }
+
+    .content p {
+        font-size: 13px; 
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) { 
+    .content {
+        padding: 10px;
+    }
+
+    .content h1 {
+        font-size: 20px; 
+    }
+
+    .content p {
+        font-size: 12px;
+        max-width: 100%;
+    }
+}

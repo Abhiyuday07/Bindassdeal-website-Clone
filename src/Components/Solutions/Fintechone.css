@@ -1,0 +1,125 @@
+.fintechone-container {
+    width: 100%;
+    padding: 40px 120px;
+    box-sizing: border-box;
+}
+.fintech-section {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.fintech-image,
+.fintech-text {
+    flex: 1 1 30%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.fintech-image {
+    margin-left: 80px;
+}
+
+.fintech-text {
+    margin-right: 80px;
+    text-align: left;
+}
+
+.fintech-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.fintech-text h1 {
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+}
+
+.fintech-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.fintech-reverse {
+    flex-direction: row-reverse;
+}
+
+.fintech-reverse .fintech-image {
+    margin-left: 0;
+    margin-right: 80px;
+}
+
+.fintech-reverse .fintech-text {
+    margin-right: 0;
+    margin-left: 80px;
+}
+
+@media (max-width: 1024px) {
+    .fintechone-container {
+        padding: 30px 60px;
+    }
+
+    .fintech-section {
+        flex-wrap: wrap; 
+    }
+
+    .fintech-image,
+    .fintech-text {
+        flex: 1 1 100%; 
+        padding: 10px;
+    }
+
+    .fintech-image {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .fintech-text {
+        margin-right: 0;
+        text-align: center; 
+    }
+
+    .fintech-text h1 {
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    .fintech-text p {
+        font-size: 1rem;
+        text-align: left;
+    }
+}
+
+@media (max-width: 768px) {
+    .fintechone-container {
+        padding: 20px 30px;
+    }
+
+    .fintech-text h1 {
+        font-size: 1.8rem;
+        text-align: left;
+    }
+
+    .fintech-text p {
+        font-size: 0.95rem;
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .fintechone-container {
+        padding: 10px 20px;
+    }
+
+    .fintech-text h1 {
+        font-size: 1.5rem;
+        text-align: left;
+    }
+
+    .fintech-text p {
+        font-size: 0.85rem;
+        text-align: left;
+    }
+}

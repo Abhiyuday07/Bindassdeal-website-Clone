@@ -1,0 +1,132 @@
+.resourcesone-container {
+    width: 100%;
+    padding: 40px 120px; 
+    box-sizing: border-box;
+}
+
+.resources-section {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.resources-image,
+.resources-text {
+    flex: 1 1 30%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.resources-image {
+    margin-left: 80px; 
+}
+
+.resources-text {
+    margin-right: 80px; 
+    text-align: left;
+}
+
+.resources-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.resources-text h1 {
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+}
+
+.resources-text p {
+    font-size: 1.1rem; 
+    line-height: 1.6;
+}
+
+.resources-reverse {
+    flex-direction: row-reverse;
+}
+
+.resources-reverse .resources-image {
+    margin-left: 0;
+    margin-right: 80px;
+}
+
+.resources-reverse .resources-text {
+    margin-right: 0;
+    margin-left: 80px; 
+}
+@media (max-width: 1024px) {
+    .resourcesone-container {
+        padding: 20px 60px;
+    }
+
+    .resources-text h1 {
+        font-size: 1.2rem;
+        text-align: left;
+    }
+
+    .resources-text p {
+        font-size: 1rem;
+        text-align: left;
+    }
+}
+
+@media (max-width: 768px) {
+    .resources-section {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .resources-image,
+    .resources-text {
+        flex: 1 1 100%;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .resources-image {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .resources-text {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .resources-reverse .resources-image {
+        margin-right: 0;
+    }
+
+    .resources-reverse .resources-text {
+        margin-left: 0;
+    }
+
+    .resources-text h1 {
+        font-size: 1.8rem;
+        text-align: left;
+    }
+
+    .resources-text p {
+        font-size: 0.95rem;
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .resourcesone-container {
+        padding: 10px 20px;
+    }
+
+    .resources-text h1 {
+        font-size: 1.5rem;
+        text-align: left;
+    }
+
+    .resources-text p {
+        font-size: 0.85rem;
+        text-align: left;
+    }
+}

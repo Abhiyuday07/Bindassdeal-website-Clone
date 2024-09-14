@@ -1,0 +1,121 @@
+.services-section {
+    background-color: #171616;
+    color: white; 
+    padding: 50px 0;
+    text-align: center;
+}
+
+.services-section h2 {
+    font-size: 46px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.services-section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white; 
+}
+
+.services-container {
+    background-color: #fbc157;
+    padding: 18px;
+    border-radius: 9px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 18px;
+    max-width: 72%;
+    margin: 0 auto;
+    color: white; 
+}
+
+.service-card {
+    background-color: #fbc157;
+    border-radius: 9px;
+    padding: 9px;
+    text-align: left;
+    color: white;
+    text-align: center;
+}
+
+.service-card h3 {
+    font-size: 0.99rem;
+    margin-top: 9px;
+    color: black; 
+}
+
+.service-card p {
+    margin-top: 9px;
+    font-size: 0.765rem;
+    color: black;
+}
+
+.service-card img {
+    max-width: 58px;
+    height: auto;
+}
+/* .bottom-right-image {
+    position: absolute; 
+    bottom: 0; 
+    right: 0; 
+    width: 50%; 
+    height: auto; 
+    margin-right: 20px;
+    margin-bottom: 20px; 
+} */
+
+
+
+@media (max-width: 1200px) { 
+    .services-container {
+        grid-template-columns: repeat(2, 1fr); /
+    }
+
+    .service-card {
+        padding: 12px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) { 
+    .services-section h2 {
+        font-size: 36px;
+    }
+
+    .services-section p {
+        font-size: 16px;
+        max-width: 90%; 
+    }
+
+    .services-container {
+        grid-template-columns: 1fr; 
+        max-width: 90%; 
+    }
+
+    .service-card {
+        padding: 12px;
+        text-align: center;
+    }
+
+    .service-card h3 {
+        font-size: 0.875rem; 
+    }
+
+    .service-card p {
+        font-size: 0.75rem; 
+    }
+}
+.bottom-right-image {
+    position: absolute; 
+    bottom: 20px; 
+    right: 20px;
+    width: auto;
+    height: 4%;
+    margin-right: 34px; 
+    margin-bottom: 590px; 
+    z-index: 1;
+    position: absolute;
+}

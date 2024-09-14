@@ -1,0 +1,128 @@
+.commerceone-container {
+    width: 100%;
+    padding: 40px 120px; 
+    box-sizing: border-box;
+}
+
+.commerce-section {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.commerce-image,
+.commerce-text {
+    flex: 1 1 30%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.commerce-image {
+    margin-left: 80px; 
+}
+
+.commerce-text {
+    margin-right: 80px; 
+    text-align: left;
+}
+
+.commerce-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.commerce-text h1 {
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+}
+
+.commerce-text p {
+    font-size: 1.1rem; 
+    line-height: 1.6;
+}
+
+.commerce-reverse {
+    flex-direction: row-reverse;
+}
+
+.commerce-reverse .commerce-image {
+    margin-left: 0;
+    margin-right: 80px;
+}
+
+.commerce-reverse .commerce-text {
+    margin-right: 0;
+    margin-left: 80px; 
+}
+
+@media (max-width: 1024px) {
+    .commerceone-container {
+        padding: 30px 60px;
+    }
+
+    .commerce-section {
+        flex-wrap: wrap;
+    }
+
+    .commerce-image,
+    .commerce-text {
+        flex: 1 1 100%; 
+        margin: 0;
+        padding: 20px 0;
+    }
+
+    .commerce-image {
+        margin-bottom: 30px; 
+    }
+
+    .commerce-text {
+        text-align: center;
+    }
+
+    .commerce-text h1 {
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    .commerce-text p {
+        font-size: 1rem;
+        text-align: left;
+    }
+}
+@media (max-width: 768px) {
+    .commerceone-container {
+        padding: 20px;
+    }
+
+    .commerce-section {
+        flex-direction: column; 
+    }
+
+    .commerce-image,
+    .commerce-text {
+        flex: 1 1 100%;
+        padding: 10px 0;
+    }
+
+    .commerce-text h1 {
+        font-size: 1.8rem;
+        text-align: left;
+    }
+
+    .commerce-text p {
+        font-size: 0.9rem;
+        text-align: left;
+    }
+}
+@media (max-width: 480px) {
+    .commerce-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .commerce-text p {
+        font-size: 0.8rem;
+        text-align: left;
+    }
+}

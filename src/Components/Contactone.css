@@ -1,0 +1,117 @@
+.contactone-container {
+    background-color: #1e0f0c;
+    color: white;
+    padding: 40px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 105vh;
+    width: auto;
+}
+
+.contactone-container h2 {
+    text-align: center;
+    margin-bottom: 56px; 
+    font-size: 40.8px;
+    line-height: 1.2;
+    max-width: 612px; 
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    gap: 2.04rem; 
+    padding-bottom: 2.04rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15.3px; 
+}
+
+.form-group label {
+    margin-bottom: 5.1px; 
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10.2px; 
+    border-radius: 5.1px; 
+    border: none;
+    font-size: 16.32px; 
+    min-width: 306px; 
+}
+
+.form-group input {
+    height: 40.8px; 
+}
+
+.form-group textarea {
+    height: 102px;
+    resize: none;
+}
+
+.submit-button {
+    background-color: #ffcc66;
+    color: #1e0f0c;
+    border: none;
+    padding: 8.16px 16.32px; 
+    font-size: 16.32px;
+    border-radius: 5.1px; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: center;
+}
+
+.submit-button:hover {
+    background-color: #ffc107;
+}
+
+@media (max-width: 1024px) {
+    .contactone-container {
+        padding: 30px;
+        height: auto; 
+    }
+
+    .contactone-container h2 {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+
+    .form-row {
+        flex-direction: column; 
+        gap: 1.5rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        min-width: 100%; 
+    }
+}
+@media (max-width: 768px) {
+    .contactone-container {
+        padding: 20px;
+        height: auto;
+    }
+
+    .contactone-container h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .form-row {
+        gap: 1rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        min-width: 100%; 
+    }
+
+    .submit-button {
+        font-size: 14px; 
+        padding: 6px 12px;
+    }
+}

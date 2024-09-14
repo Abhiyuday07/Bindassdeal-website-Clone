@@ -1,0 +1,165 @@
+.aiml-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background-color: #f9f9f9;
+  height: 90vh; 
+}
+
+.top-right-image {
+  position: absolute;
+  right: 1px;
+  top: 17%;
+  /* transform: translateY(-50%); */
+}
+
+.top-right-image-img {
+  max-width: 100%;
+  height: auto;
+  margin-top: -100px;
+  margin-right: 36px;
+}
+
+.aiml-content {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  width: 100%;
+  position: relative;
+}
+
+.aiml-box {
+  flex: 1;
+  padding: 20px;
+}
+
+.aiml-box-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.aiml-box-left h1 {
+  font-size: 2.2rem;
+  color: #333;
+}
+
+.aiml-box-left p {
+  color: var(--charcoal-grey-text-color);
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 2;
+  margin-bottom: 10px;
+}
+
+.aiml-box-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.aiml-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.bottom-image {
+  position: absolute;
+  bottom: -70px;
+  left: 15px;
+  margin-left: 20px;
+  z-index: 1;
+}
+
+.bottom-image-img {
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 1024px) {
+  .aiml-content {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .top-right-image-img {
+      margin-top: -80px;
+      margin-right: 20px;
+  }
+
+  .aiml-box-left h1 {
+      font-size: 1.8rem;
+  }
+
+  .aiml-box-left p {
+      font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .aiml-container {
+      padding: 30px;
+      height: auto;
+  }
+
+  .aiml-content {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .top-right-image {
+      top: 10%;
+      right: 5px;
+  }
+
+  .aiml-box-left h1 {
+      font-size: 1.6rem;
+  }
+
+  .aiml-box-left p {
+      font-size: 12px;
+  }
+
+  .bottom-image {
+      bottom: -50px;
+      left: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .aiml-container {
+      padding: 20px;
+      height: auto;
+  }
+
+  .aiml-content {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .top-right-image {
+      top: 5%;
+      right: 0px;
+  }
+
+  .top-right-image-img {
+      margin-top: -50px;
+      margin-right: 10px;
+  }
+
+  .aiml-box-left h1 {
+      font-size: 1.4rem;
+  }
+
+  .aiml-box-left p {
+      font-size: 11px;
+  }
+
+  .bottom-image {
+      bottom: -30px;
+      left: 5px;
+  }
+}

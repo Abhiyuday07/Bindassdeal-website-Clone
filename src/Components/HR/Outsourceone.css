@@ -1,0 +1,39 @@
+/* .outsourceone-container {
+    width: 100%;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.section-image {
+    flex: 1 1 50%;
+    padding: 10px;
+}
+
+.section-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.section-text {
+    flex: 1 1 50%;
+    padding: 10px;
+    text-align: left;
+}
+
+.section-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.section-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+} */

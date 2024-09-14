@@ -1,0 +1,122 @@
+.advertisingone-container {
+    width: 100%;
+    padding: 40px 120px;
+    box-sizing: border-box;
+}
+
+.advertising-section {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.advertising-image,
+.advertising-text {
+    flex: 1 1 30%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.advertising-image {
+    margin-left: 80px;
+}
+
+.advertising-text {
+    margin-right: 80px;
+    text-align: left;
+}
+
+.advertising-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.advertising-text h1 {
+    font-size: 2.1rem;
+    margin-bottom: 20px;
+}
+
+.advertising-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.advertising-reverse {
+    flex-direction: row-reverse;
+}
+
+.advertising-reverse .advertising-image {
+    margin-left: 0;
+    margin-right: 80px;
+}
+
+.advertising-reverse .advertising-text {
+    margin-right: 0;
+    margin-left: 80px;
+}
+
+@media (max-width: 1024px) {
+    .advertisingone-container {
+        padding: 30px 60px;
+    }
+
+    .advertising-section {
+        flex-wrap: wrap; 
+    }
+
+    .advertising-image,
+    .advertising-text {
+        flex: 1 1 100%;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .advertising-image {
+        margin-bottom: 30px; 
+    }
+
+    .advertising-text h1 {
+        font-size: 1.8rem;
+        text-align: left;
+    }
+
+    .advertising-text p {
+        font-size: 1rem;
+        text-align: left;
+    }
+}
+@media (max-width: 768px) {
+    .advertisingone-container {
+        padding: 20px;
+    }
+
+    .advertising-section {
+        flex-direction: column;
+    }
+
+    .advertising-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .advertising-text p {
+        font-size: 0.9rem;
+        text-align: left;
+    }
+
+    .advertising-image img {
+        border-radius: 4px;
+    }
+}
+@media (max-width: 480px) {
+    .advertising-text h1 {
+        font-size: 1.2rem;
+        text-align: left;
+    }
+
+    .advertising-text p {
+        font-size: 0.8rem;
+        text-align: left;
+    }
+}

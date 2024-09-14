@@ -1,0 +1,127 @@
+.ecommerceone-container {
+    width: 100%;
+    padding: 40px 120px;
+    box-sizing: border-box;
+}
+
+.ecommerce-section {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.ecommerce-image,
+.ecommerce-text {
+    flex: 1 1 30%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.ecommerce-image {
+    margin-left: 80px; 
+}
+
+.ecommerce-text {
+    margin-right: 80px; 
+    text-align: left;
+}
+
+.ecommerce-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.ecommerce-text h1 {
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+}
+
+.ecommerce-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.ecommerce-reverse {
+    flex-direction: row-reverse;
+}
+
+.ecommerce-reverse .ecommerce-image {
+    margin-left: 0;
+    margin-right: 80px;
+}
+
+.ecommerce-reverse .ecommerce-text {
+    margin-right: 0;
+    margin-left: 80px;
+}
+
+@media (max-width: 1024px) {
+    .ecommerceone-container {
+        padding: 20px 60px;
+    }
+
+    .ecommerce-text h1 {
+        font-size: 2rem;
+    }
+
+    .ecommerce-text p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .ecommerce-section {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ecommerce-image,
+    .ecommerce-text {
+        flex: 1 1 100%;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .ecommerce-image {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .ecommerce-text {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .ecommerce-reverse .ecommerce-image {
+        margin-right: 0;
+    }
+
+    .ecommerce-reverse .ecommerce-text {
+        margin-left: 0;
+    }
+
+    .ecommerce-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .ecommerce-text p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .ecommerceone-container {
+        padding: 10px 20px;
+    }
+
+    .ecommerce-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .ecommerce-text p {
+        font-size: 0.85rem;
+    }
+}

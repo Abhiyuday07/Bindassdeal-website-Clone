@@ -1,0 +1,172 @@
+.retailone-container {
+    width: 100%;
+    padding: 40px 120px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.retail-section {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.retail-image,
+.retail-text {
+    flex: 1 1 30%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.retail-image {
+    margin-left: 80px;
+}
+
+.retail-text {
+    margin-right: 80px;
+    text-align: left;
+}
+
+.retail-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.retail-text h1 {
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+}
+
+.retail-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.retail-reverse {
+    flex-direction: row-reverse;
+}
+
+.retail-reverse .retail-image {
+    margin-left: 0;
+    margin-right: 80px;
+}
+
+.retail-reverse .retail-text {
+    margin-right: 0;
+    margin-left: 80px;
+}
+
+@media (max-width: 1280px) {
+    .retailone-container {
+        padding: 40px 80px;
+    }
+
+    .retail-text h1 {
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    .retail-text p {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .retail-image {
+        margin-left: 60px;
+    }
+
+    .retail-text {
+        margin-right: 60px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .retailone-container {
+        padding: 30px 60px;
+    }
+
+    .retail-text h1 {
+        font-size: 1.8rem;
+        text-align: left;
+    }
+
+    .retail-text p {
+        font-size: 0.95rem;
+        text-align: left;
+    }
+
+    .retail-image {
+        margin-left: 40px;
+    }
+
+    .retail-text {
+        margin-right: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .retailone-container {
+        padding: 20px 30px;
+    }
+
+    .retail-section {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .retail-image {
+        margin: 0 0 20px 0;
+    }
+
+    .retail-text {
+        margin: 0;
+        text-align: center;
+    }
+
+    .retail-text h1 {
+        font-size: 1.6rem;
+        margin-bottom: 15px;
+        text-align: left;
+    }
+
+    .retail-text p {
+        font-size: 0.9rem;
+        text-align: left;
+    }
+
+    .retail-reverse {
+        flex-direction: column;
+    }
+
+    .retail-reverse .retail-image {
+        margin: 0 0 20px 0;
+    }
+
+    .retail-reverse .retail-text {
+        margin: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .retailone-container {
+        padding: 15px 20px;
+    }
+
+    .retail-text h1 {
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+
+    .retail-text p {
+        font-size: 0.85rem;
+        text-align: left;
+    }
+
+    .retail-image img {
+        border-radius: 5px;
+    }
+}

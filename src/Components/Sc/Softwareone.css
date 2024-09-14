@@ -1,0 +1,130 @@
+.softwareone-container {
+    width: 100%;
+    padding: 40px 120px; 
+    box-sizing: border-box;
+}
+
+.software-section {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.software-image,
+.software-text {
+    flex: 1 1 30%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.software-image {
+    margin-left: 80px; 
+}
+
+.software-text {
+    margin-right: 80px; 
+    text-align: left;
+}
+
+.software-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.software-text h1 {
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+}
+
+.software-text p {
+    font-size: 1.1rem; 
+    line-height: 1.6;
+}
+
+.software-reverse {
+    flex-direction: row-reverse;
+}
+
+.software-reverse .software-image {
+    margin-left: 0;
+    margin-right: 80px;
+}
+
+.software-reverse .software-text {
+    margin-right: 0;
+    margin-left: 80px; 
+}
+@media (max-width: 1024px) {
+    .softwareone-container {
+        padding: 20px 60px;
+    }
+
+    .software-text h1 {
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    .software-text p {
+        font-size: 1rem;
+        text-align: left;
+    }
+}
+@media (max-width: 768px) {
+    .software-section {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .software-image,
+    .software-text {
+        flex: 1 1 100%;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .software-image {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .software-text {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .software-reverse .software-image {
+        margin-right: 0;
+    }
+
+    .software-reverse .software-text {
+        margin-left: 0;
+    }
+
+    .software-text h1 {
+        font-size: 1.8rem;
+        text-align: left;
+    }
+
+    .software-text p {
+        font-size: 0.95rem;
+        text-align: left;
+    }
+}
+@media (max-width: 480px) {
+    .softwareone-container {
+        padding: 10px 20px;
+    }
+
+    .software-text h1 {
+        font-size: 1.5rem;
+        text-align: left;
+    }
+
+    .software-text p {
+        font-size: 0.85rem;
+        text-align: left;
+    }
+}

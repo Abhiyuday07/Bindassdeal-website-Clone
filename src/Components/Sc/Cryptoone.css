@@ -1,0 +1,143 @@
+.cryptoone-container {
+    width: 100%;
+    padding: 40px 120px;
+    box-sizing: border-box;
+}
+.crypto-section {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.crypto-image,
+.crypto-text {
+    flex: 1 1 30%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.crypto-image {
+    margin-left: 80px;
+}
+
+.crypto-text {
+    margin-right: 80px;
+    text-align: left;
+}
+
+.crypto-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.crypto-text h1 {
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+}
+
+.crypto-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+.crypto-reverse {
+    flex-direction: row-reverse;
+}
+
+.crypto-reverse .crypto-image {
+    margin-left: 0;
+    margin-right: 80px;
+}
+
+.crypto-reverse .crypto-text {
+    margin-right: 0;
+    margin-left: 80px;
+}
+
+@media (max-width: 1024px) {
+    .cryptoone-container {
+        padding: 30px 60px;
+    }
+
+    .crypto-image,
+    .crypto-text {
+        flex: 1 1 45%;
+        padding: 15px;
+    }
+
+    .crypto-image {
+        margin-left: 40px;
+    }
+
+    .crypto-text {
+        margin-right: 40px;
+    }
+
+    .crypto-text h1 {
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    .crypto-text p {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .crypto-reverse .crypto-image {
+        margin-right: 40px;
+    }
+
+    .crypto-reverse .crypto-text {
+        margin-left: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .cryptoone-container {
+        padding: 20px 20px;
+    }
+
+    .crypto-section {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .crypto-image,
+    .crypto-text {
+        flex: 1 1 100%;
+        padding: 10px;
+    }
+
+    .crypto-image {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .crypto-text {
+        margin-right: 0;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .crypto-text h1 {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+
+    .crypto-text p {
+        font-size: 0.8rem;
+    }
+
+    .crypto-reverse {
+        flex-direction: column;
+    }
+
+    .crypto-reverse .crypto-image {
+        margin-right: 0;
+    }
+
+    .crypto-reverse .crypto-text {
+        margin-left: 0;
+    }
+}

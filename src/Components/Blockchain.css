@@ -1,0 +1,51 @@
+.blockchain-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .image-card {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .image-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+    .image-card:nth-child(4) {
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: -95px;
+  }
+  
+  .image-card:nth-child(5) {
+    grid-column: 2;
+    grid-row: 2;
+    margin-top: -20px;
+  }
+    @media (max-width: 1024px) {
+    .blockchain-container {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px; 
+    }
+  
+    .image-card:nth-child(4),
+    .image-card:nth-child(5) {
+      margin-top: 0;
+    }
+  }
+    @media (max-width: 768px) {
+    .blockchain-container {
+      grid-template-columns: 1fr;
+      gap: 10px; 
+    }
+  
+    .image-card:nth-child(4),
+    .image-card:nth-child(5) {
+      margin-top: 0; 
+    }
+  }
+  

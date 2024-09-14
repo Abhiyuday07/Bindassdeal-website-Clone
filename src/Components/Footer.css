@@ -1,0 +1,170 @@
+.footer {
+  background-color: #171616;
+  color: rgb(120, 112, 112);
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 0 15px;
+  min-width: 200px;
+  height: 60vh;
+  margin-top: 40px;
+}
+
+.footer-section h4 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 25px;
+}
+
+.footer-section ul li a {
+  color: rgb(120, 112, 112);
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+/* .footer-section ul li a:hover {
+  text-decoration: underline;
+} */
+
+.footer-section img {
+  max-width: 180px;
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: white;
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: none;
+  font-size: 0.875rem;
+  color: white;
+}
+
+.highlight {
+  color: yellow;
+}
+
+@media (max-width: 1024px) {
+  .footer-content {
+    padding: 0 10px; 
+  }
+
+  .footer-section {
+    margin: 0 10px;
+    height: auto;
+    margin-top: 20px; 
+    text-align: center; 
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    margin: 0;
+    width: 100%; 
+    height: auto; 
+    margin-top: 20px; 
+    text-align: center; 
+  }
+
+  .footer-section h4 {
+    font-size: 0.875rem; 
+    text-align: center; 
+  }
+
+  .footer-section ul li {
+    margin-bottom: 20px;
+    text-align: center; 
+  }
+
+  .footer-section ul li a {
+    font-size: 0.75rem;
+    text-align: center;
+  }
+
+  .footer-section img {
+    display: block;
+    margin: 0 auto; 
+  }
+
+  .social-icons {
+    margin-top: 20px;
+    text-align: center; 
+  }
+
+  .social-icons a {
+    font-size: 1rem;
+    margin-right: 5px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 15px 0;
+  }
+
+  .footer-section h4 {
+    font-size: 0.75rem; 
+    text-align: center; 
+  }
+
+  .footer-section ul li {
+    margin-bottom: 15px;
+    text-align: center; 
+  }
+
+  .footer-section ul li a {
+    font-size: 0.6875rem;
+    text-align: center; 
+  }
+
+  .footer-section img {
+    display: block;
+    margin: 0 auto; 
+  }
+
+  .social-icons {
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .social-icons a {
+    font-size: 0.875rem; 
+    margin-right: 3px; 
+  }
+}

@@ -1,0 +1,91 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; 
+}
+
+.general-container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url('https://images.unsplash.com/photo-1532102522784-9e4d4d9a533c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.general-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 20px;
+    box-sizing: border-box; 
+}
+
+.general-content h1 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    letter-spacing: 0.1em;
+}
+
+.general-content p {
+    font-size: 1.6rem;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+    .general-content h1 {
+        font-size: 1.1rem;
+    }
+
+    .general-content p {
+        font-size: 1.4rem;
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .general-container {
+        background-attachment: scroll; 
+    }
+
+    .general-content {
+        padding: 15px;
+    }
+
+    .general-content h1 {
+        font-size: 1rem;
+    }
+
+    .general-content p {
+        font-size: 1.2rem;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .general-content {
+        padding: 10px;
+    }
+
+    .general-content h1 {
+        font-size: 0.9rem;
+    }
+
+    .general-content p {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+}

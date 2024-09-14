@@ -1,0 +1,132 @@
+.designone-container {
+    width: 100%;
+    padding: 40px 120px;
+    box-sizing: border-box;
+}
+
+.design-section {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.design-image,
+.design-text {
+    flex: 1 1 30%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.design-image {
+    margin-left: 80px;
+}
+
+.design-text {
+    margin-right: 80px;
+    text-align: left;
+}
+
+.design-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.design-text h1 {
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+}
+
+.design-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.design-reverse {
+    flex-direction: row-reverse;
+}
+
+.design-reverse .design-image {
+    margin-left: 0;
+    margin-right: 80px;
+}
+
+.design-reverse .design-text {
+    margin-right: 0;
+    margin-left: 80px;
+}
+
+@media (max-width: 1024px) {
+    .designone-container {
+        padding: 30px 60px; 
+    }
+
+    .design-image, 
+    .design-text {
+        flex: 1 1 40%; 
+    }
+
+    .design-image {
+        margin-left: 40px; 
+    }
+
+    .design-text {
+        margin-right: 40px;
+    }
+
+    .design-text h1 {
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    .design-text p {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .design-reverse .design-image {
+        margin-right: 40px;
+    }
+
+    .design-reverse .design-text {
+        margin-left: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .design-section {
+        flex-wrap: wrap; 
+    }
+
+    .design-image,
+    .design-text {
+        flex: 1 1 100%;
+        padding: 10px; 
+    }
+
+    .design-image {
+        margin-left: 0;
+    }
+
+    .design-text {
+        margin-right: 0;
+        text-align: center; 
+    }
+
+    .design-text h1 {
+        font-size: 1.8rem;
+        text-align: left;
+    }
+
+    .design-text p {
+        font-size: 0.95rem; 
+        text-align: left;
+    }
+
+    .design-reverse .design-image,
+    .design-reverse .design-text {
+        margin-left: 0;
+        margin-right: 0; 
+    }
+}

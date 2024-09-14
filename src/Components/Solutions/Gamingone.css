@@ -1,0 +1,144 @@
+.gamingone-container {
+    width: 100%;
+    padding: 40px 120px;
+    box-sizing: border-box;
+}
+
+.gaming-section {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.gaming-image,
+.gaming-text {
+    flex: 1 1 30%; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.gaming-image {
+    margin-left: 80px;
+}
+
+.gaming-text {
+    margin-right: 80px;
+    text-align: left;
+}
+
+.gaming-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.gaming-text h1 {
+    font-size: 2.3rem; 
+    margin-bottom: 20px;
+}
+
+.gaming-text p {
+    font-size: 1.1rem; 
+    line-height: 1.6;
+}
+
+.gaming-reverse {
+    flex-direction: row-reverse;
+}
+
+.gaming-reverse .gaming-image {
+    margin-left: 0;
+    margin-right: 80px; 
+}
+
+.gaming-reverse .gaming-text {
+    margin-right: 0;
+    margin-left: 80px;
+}
+@media (max-width: 1024px) {
+    .gamingone-container {
+        padding: 40px 60px;
+    }
+
+    .gaming-image,
+    .gaming-text {
+        flex: 1 1 45%;
+        padding: 15px;
+    }
+
+    .gaming-image {
+        margin-left: 40px;
+    }
+
+    .gaming-text {
+        margin-right: 40px;
+    }
+
+    .gaming-text h1 {
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    .gaming-text p {
+        font-size: 1rem;
+        text-align: left;
+    }
+}
+@media (max-width: 768px) {
+    .gamingone-container {
+        padding: 20px;
+    }
+
+    .gaming-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .gaming-image,
+    .gaming-text {
+        flex: 1 1 100%;
+        padding: 10px;
+    }
+
+    .gaming-image {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .gaming-text {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .gaming-text h1 {
+        font-size: 1.6rem;
+        text-align: left;
+    }
+
+    .gaming-text p {
+        font-size: 0.9rem;
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .gamingone-container {
+        padding: 10px;
+    }
+
+    .gaming-image,
+    .gaming-text {
+        padding: 8px;
+    }
+
+    .gaming-text h1 {
+        font-size: 1.4rem;
+        text-align: left;
+    }
+
+    .gaming-text p {
+        font-size: 0.8rem;
+        text-align: left;
+    }
+}

@@ -1,0 +1,91 @@
+/* Base styles for desktop view */
+.generalone-container {
+    width: 100%;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.section-image {
+    flex: 1 1 50%;
+    padding: 10px;
+}
+
+.section-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.section-text {
+    flex: 1 1 50%;
+    padding: 10px;
+    text-align: left;
+}
+
+.section-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.section-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+@media (max-width: 1024px) {
+    .generalone-container {
+        padding: 30px 15px;
+    }
+
+    .section-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .section-text p {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-image,
+    .section-text {
+        flex: 1 1 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .section-text h2 {
+        font-size: 1.6rem;
+        text-align: left;
+    }
+
+    .section-text p {
+        font-size: 0.95rem;
+        text-align: left;
+    }
+}
+@media (max-width: 480px) {
+    .generalone-container {
+        padding: 20px 10px;
+    }
+
+    .section-text h2 {
+        font-size: 1.4rem;
+        text-align: left;
+    }
+
+    .section-text p {
+        font-size: 0.85rem;
+        text-align: left;
+    }
+}

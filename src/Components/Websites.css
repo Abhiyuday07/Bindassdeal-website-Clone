@@ -1,0 +1,27 @@
+.websites-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 60px; 
+  }
+  
+  .website-image {
+    width: 30%; 
+    height: auto;
+    margin-bottom: 20px; 
+    border-radius: 5px;
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .website-image {
+      width: 48%; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .website-image {
+      width: 100%;
+    }
+  }
+  

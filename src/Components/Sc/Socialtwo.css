@@ -1,0 +1,36 @@
+.socialtwo-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://images.unsplash.com/uploads/141103282695035fa1380/95cdfeef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDZ8fGRpZ2l0YWwlMjBtYXJrZXRpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.socialtwo-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socialtwo-content {
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.socialtwo-content h1 {
+    font-size: 1.7rem;
+    line-height: 1.5;
+}
